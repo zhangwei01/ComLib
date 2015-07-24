@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_max_length_poi_name">60</integer>
+    <integer name="config_max_length_poi_addr">60</integer>
+    <integer name="config_max_length_poi_tel">30</integer>
+    <integer name="config_max_length_keyword">18</integer>
+    <integer name="config_max_length_reg_code">24</integer>
+    <bool name="config_closeDialogWhenTouchOutside">true</bool>
+</resources>

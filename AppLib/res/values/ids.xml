@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="goBack" type="id"/>
+    <item name="backToMap" type="id"/>
+    <item name="goBack" type="id"/>
+    <item name="text" type="id"/>
+    <item name="on" type="id"/>
+    <item name="off" type="id"/>
+</resources>

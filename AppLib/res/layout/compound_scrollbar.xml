@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/scrollUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_up_light" />
+    <FrameLayout
+        android:id="@+id/track"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:background="@drawable/scrollbar_background" >
+        <FrameLayout
+            android:id="@+id/thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" >
+            <ImageView
+                android:id="@+id/thumb_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/scrollbar"
+                android:duplicateParentState="true"
+                android:scaleType="centerInside" />
+            <TextView
+                android:id="@+id/page_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/scrollbar"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:textColor="?android:attr/textColorPrimaryInverse"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/scrollDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_down_light" />
+</merge>

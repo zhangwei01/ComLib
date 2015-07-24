@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/compound_edit_text"
+    android:gravity="center_vertical" >
+
+    <AutoCompleteTextView
+        android:id="@+id/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@null"
+        android:padding="3dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/extra_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:textColor="#949494" />
+
+    <ImageButton
+        android:id="@+id/dropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:padding="3dp"
+        android:src="@drawable/drop_down_arrow" />
+
+</LinearLayout>

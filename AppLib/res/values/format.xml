@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="format_distance_meter">%dm</string>
+    <string name="format_distance_kilometer">%.1fkm</string>
+    <string name="format_distance_kilometer_short">%.0fkm</string>
+    <string name="format_short_time">%1$dh %2$dm</string>
+    <string name="format_km_per_hour">%.1fkm/h</string>
+    <string name="format_m_per_second">%.1fm/s</string>
+    <string name="format_km_per_hour_short">%dkm/h</string>
+    <string name="format_m_per_second_short">%dm/s</string>
+    <string name="format_page_number">%1$d/%2$d</string>
+</resources>

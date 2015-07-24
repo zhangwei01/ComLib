@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- styles will be merged, define what we need -->
+    <style name="Theme" parent="@style/BaseTheme">
+        <item name="android:colorForeground">@color/bright_foreground_dark</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_dark_inverse</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/primary_text_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/primary_text_light</item>
+        <item name="android:textAppearance">@style/TextAppearance</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearance.Inverse</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.Small</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.Medium.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.Small.Inverse</item>
+        <!-- Window -->
+        <item name="android:windowTitleStyle">@style/WindowTitle</item>
+        <!-- to forbid animation & black screen -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Widget -->
+        <item name="android:textViewStyle">@style/Widget.TextView</item>
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:buttonStyleSmall">@style/Widget.Button</item>
+        <item name="android:buttonStyleInset">@style/Widget.Button</item>
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:imageButtonStyle">@style/Widget.ImageButton</item>
+        <item name="android:listViewStyle">@style/Widget.ListView</item>
+        <item name="android:editTextStyle">@style/Widget.EditText</item>
+        <item name="android:radioButtonStyle">@style/Widget.CompoundButton.RadioButton</item>
+        <item name="android:progressBarStyleHorizontal">@style/Widget.ProgressBar.Horizontal</item>
+        <item name="android:seekBarStyle">@style/Widget.SeekBar</item>
+        <item name="android:autoCompleteTextViewStyle">@style/Widget.AutoCompleteTextView</item>
+        <item name="android:checkboxStyle">@style/Widget.CompoundButton.CheckBox</item>
+        <item name="android:progressBarStyle">@style/Widget.ProgressBar</item>
+        <!--  -->
+        <item name="android:horizontalDivider">@drawable/divider_horizontal</item>
+        <item name="android:dividerHorizontal">@drawable/divider_horizontal</item>
+    </style>
+    <!-- Variant of {@link #Theme} with no title bar -->
+    <style name="Theme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- Variant of {@link #Theme} that has no title bar and no status bar -->
+    <style name="Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--
+         Default theme for panel windows. This removes all extraneous window decorations, 
+         so you basically have an empty rectangle in which to place your content.  It makes
+         the window floating, with a transparent background, and turns off dimming behind the window.
+    -->
+    <style name="Theme.Panel">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--
+         Theme for translucent activities (on API level 10 and lower). That is, windows
+         that allow you to see through them to the windows behind.  This sets up the translucent
+         flag and appropriate animations for your windows.
+    -->
+    <style name="Theme.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <!-- Variant of {@link #Theme_Translucent} with no title bar -->
+    <style name="Theme.Translucent.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--
+         Variant of {@link #Theme_Translucent} that has no title bar and
+         no status bar
+    -->
+    <style name="Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--
+         Default theme for activities that don't actually display a UI; that
+         is, they finish themselves before being resumed.
+    -->
+    <style name="Theme.NoDisplay">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <!--
+         Default theme for dialog windows and activities (on API level 10 and lower),
+         which is used by the
+         {@link android.app.Dialog} class.  This changes the window to be
+         floating (not fill the entire screen), and puts a frame around its
+         contents.  You can set this theme on an activity if you would like to
+         make an activity that looks like a Dialog.
+    -->
+    <style name="Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">@bool/config_closeDialogWhenTouchOutside</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <!--
+         Default theme for dialog windows and activities (on API level 10 and lower),
+         which is used by the
+         {@link android.app.Dialog} class.  This changes the window to be
+         floating (not fill the entire screen), and puts a frame around its
+         contents.  You can set this theme on an activity if you would like to
+         make an activity that looks like a Dialog.
+    -->
+    <style name="Theme.Dialog.NoTitleBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowCloseOnTouchOutside">@bool/config_closeDialogWhenTouchOutside</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <!--
+         Variant of {@link Theme_Dialog} that does not include a frame (or background).
+         The view hierarchy of the dialog is responsible for drawing all of
+         its pixels.
+    -->
+    <style name="Theme.Dialog.NoFrame">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>

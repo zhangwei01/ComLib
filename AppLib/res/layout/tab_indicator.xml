@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/tab_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tab_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.Large" />
+
+</merge>

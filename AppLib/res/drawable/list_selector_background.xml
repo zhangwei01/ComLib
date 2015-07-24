@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused & Pressed -->
+    <item android:drawable="@drawable/list_selector_background_focused_pressed" android:state_focused="true" android:state_pressed="true"/>
+    <!-- Focused -->
+    <item android:drawable="@drawable/list_selector_background_focused" android:state_focused="true"/>
+    <!-- Disabled -->
+    <item android:drawable="@drawable/list_selector_background_normal" android:state_enabled="false"/>
+    <!-- Pressed -->
+    <item android:drawable="@drawable/list_selector_background_pressed" android:state_pressed="true"/>
+    <!-- Normal -->
+    <item android:drawable="@drawable/list_selector_background_normal"/>
+</selector>

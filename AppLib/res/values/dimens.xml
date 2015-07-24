@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dialog title height -->
+    <dimen name="alert_dialog_title_height">38dip</dimen>
+    <!-- Dialog button bar height -->
+    <dimen name="alert_dialog_button_bar_height">38dip</dimen>
+    <dimen name="style_text_size_large">22sp</dimen>
+    <dimen name="style_text_size_medium">18sp</dimen>
+    <dimen name="style_text_size_small">15sp</dimen>
+    <!-- 公共列表标题字体大小 -->
+    <dimen name="common_list_title_text_size">22sp</dimen>
+    <!-- 公共列表Item字体大小 -->
+    <dimen name="common_list_item_text_size">18sp</dimen>
+    <!-- 标题栏标题的字体大小 -->
+    <dimen name="title_textview_size">18sp</dimen>
+    <!-- 列表的字体大小 (Button默认的大小为14sp) -->
+    <dimen name="list_view_item_text_size">16sp</dimen>
+    <!-- 标题栏 右上角的按钮的字体大小 -->
+    <dimen name="title_right_button_text_size">14sp</dimen>
+    <!-- 列表每个item的高度 -->
+    <dimen name="list_view_item_height_size">60dp</dimen>
+    <!-- 小窗口的高度 -->
+    <dimen name="appwidget_height">260dp</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="backToMap">CCP</string>
+    <string name="application_not_found">Application not found!</string>
+    <string name="zero">0</string>
+    <string name="custom">Custom</string>
+    <string name="menu">Menu</string>
+    <string name="search">Search</string>
+    <string name="prompt">Prompt</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="refuse">Refuse</string>
+    <string name="time">Time</string>
+    <string name="quit">Exit</string>
+    <string name="go_back">Back</string>
+    <string name="simple_chinese">Simplified Chinese</string>
+    <string name="traditional_chinese">Traditional Chinese</string>
+    <string name="english">English</string>
+    <string name="save">Save</string>
+</resources>

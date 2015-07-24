@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 图片库中系统默认创建的图片文件夹AutoNavi的存放路径 -->
+    <string name="path_photo">/mnt/sdcard/AutoNaviPhoto/AutoNavi</string>
+    <!-- 图片库中,用户创建的图片文件夹的存放路径 -->
+    <string name="path_base_photo">/mnt/sdcard/AutoNaviPhoto/</string>
+</resources>

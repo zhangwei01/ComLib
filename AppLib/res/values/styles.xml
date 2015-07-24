@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="WindowTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="Screen">
+        <item name="android:background">@drawable/ic_background</item>
+    </style>
+    <style name="ScreenTitle">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="ScreenContent">
+        <item name="android:background">@null</item>
+    </style>
+    <!-- Button -->
+    <style name="Button" parent="@style/Widget.Button"></style>
+    <style name="Button.GoBack">
+        <item name="android:id">@id/goBack</item>
+        <item name="android:focusable">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">@null</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:drawableLeft">@drawable/btn_back_selector</item>
+    </style>
+    <style name="Button.BackToMap">
+        <item name="android:focusable">false</item>
+        <item name="android:id">@id/backToMap</item>
+        <item name="android:background">@null</item>
+        <item name="android:text">@null</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:drawableRight">@drawable/btn_back_to_map_selector</item>
+    </style>
+    <style name="Button.Quit">
+        <item name="android:background">@null</item>
+        <item name="android:drawableRight">@drawable/btn_quit</item>
+        <item name="android:text">@string/quit</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/title_extra_text</item>
+    </style>
+    <!-- Animation -->
+    <style name="Animation.PopupPanel" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/expand_up</item>
+        <item name="android:windowExitAnimation">@anim/collapse_down</item>
+    </style>
+    <!-- Theme - TextAppearance -->
+    <style name="TextAppearance" parent="@android:style/TextAppearance"></style>
+    <style name="TextAppearance.Inverse">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+        <item name="android:textColorLink">#0000EE</item>
+    </style>
+    <style name="TextAppearance.Large">
+        <item name="android:textSize">@dimen/style_text_size_large</item>
+    </style>
+    <style name="TextAppearance.Medium">
+        <item name="android:textSize">@dimen/style_text_size_medium</item>
+    </style>
+    <style name="TextAppearance.Small">
+        <item name="android:textSize">@dimen/style_text_size_small</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Large.Inverse">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.Medium.Inverse">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <style name="TextAppearance.Small.Inverse">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:attr/textColorHintInverse</item>
+    </style>
+    <!-- Switch按钮的字体颜色 -->
+    <style name="TextAppearance.Switch">
+        <item name="android:textColor">@color/switch_text_color</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- Switch按钮的样式 -->
+    <style name="SwitchStyle">
+        <item name="android:thumb">@drawable/ic_switch_thumb</item>
+        <item name="android:track">@drawable/ic_switch_check_bg</item>
+        <item name="android:background">@drawable/ic_switch_bg</item>
+        <item name="android:switchTextAppearance">@style/TextAppearance.Switch</item>
+    </style>
+    <!-- 提示框的横线样式 -->
+    <style name="AlertDialogStyle">
+        <item name="android:src">@drawable/alert_dialog_title_separator</item>
+    </style>
+    <!-- 对话框中按钮的样式 -->
+    <style name="Widget.Button.Borderless">
+        <item name="android:background">@drawable/btn_bottom</item>
+    </style>
+    <!-- Widget -->
+    <style name="Widget" parent="@android:style/Widget"></style>
+    <style name="Widget.Button" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="Widget.Button.Borderless">
+        <item name="android:background">@drawable/list_selector_background</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">4dip</item>
+    </style>
+    <style name="Widget.Button.Toggle" parent="@android:style/Widget.Button.Toggle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="Widget.Button.TitleExtra" parent="@style/Widget.Button">
+        <item name="android:background">@drawable/btn_title_extra</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="Widget.Button.Action">
+        <item name="android:background">@drawable/btn_action</item>
+    </style>
+    <style name="Widget.Button.Action.Float">
+        <item name="android:background">@drawable/btn_action_float</item>
+    </style>
+    <style name="Widget.Button.Action.Compact">
+        <item name="android:background">@drawable/btn_action_compact</item>
+    </style>
+    <style name="Widget.ImageButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/btn_default_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="Widget.ImageButton.Action" parent="@style/Widget.ImageButton">
+        <item name="android:background">@drawable/btn_action</item>
+    </style>
+    <style name="Widget.ImageButton.Action.Compact">
+        <item name="android:background">@drawable/btn_action_compact</item>
+    </style>
+    <style name="Widget.TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+    <style name="Widget.ListView" parent="@android:style/Widget.ListView">
+        <item name="android:divider">@drawable/ic_listview_item_separator</item>
+        <item name="android:listSelector">@drawable/listview_selector</item>
+        <item name="android:cacheColorHint">#0000</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    <style name="Widget.EditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="Widget.AutoCompleteTextView" parent="android:style/Widget.AutoCompleteTextView">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="Widget.CompoundButton.RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/btn_radio_label_background</item>
+        <item name="android:button">@drawable/btn_radio</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="Widget.CompoundButton.CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="Widget.ProgressBar" parent="@android:style/Widget.ProgressBar"></style>
+    <style name="Widget.ProgressBar.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_dark</item>
+    </style>
+    <style name="Widget.SeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:background">@drawable/seekbar_background_dark</item>
+        <item name="android:progressDrawable">@drawable/progress_horizontal_dark</item>
+        <item name="android:thumb">@drawable/seekbar_thumb_dark</item>
+        <item name="android:thumbOffset">10dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+    <style name="ScrollIndicator">
+        <item name="android:background">@drawable/btn_action_compact</item>
+    </style>
+    <!-- title bar -->
+    <style name="TitleBar" parent="@android:attr/windowTitleStyle">
+        <item name="android:textSize">@dimen/title_textview_size</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <!-- 标题栏右上角按钮统一样式 -->
+    <style name="TitleBarRightView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:background">@drawable/btn_fifty_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TitleBarRightButton" parent="@style/TitleBarRightView">
+        <item name="android:textColor">@color/color_text_view_selector</item>
+        <item name="android:textSize">@dimen/title_right_button_text_size</item>
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.autonavi.xm.widget.CompoundScrollbar
+        android:id="@+id/scrollbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" />
+    <ViewStub
+        android:id="@+id/stub_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/scrollbar"
+        android:inflatedId="@+id/list_title" />
+    <ImageView
+        android:id="@+id/list_title_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/list_title"
+        android:layout_toLeftOf="@id/scrollbar"
+        android:src="?android:attr/horizontalDivider"
+        android:visibility="gone" />
+    <com.autonavi.xm.widget.CircularExpandableListView
+        android:id="@+id/expand_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/list_title_divider"
+        android:layout_toLeftOf="@id/scrollbar"
+        android:scrollbars="none" />
+</merge>

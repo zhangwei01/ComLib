@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    style="@style/ScreenTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+    <Button
+        style="@style/Button.GoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_title_separator" />
+    <FrameLayout
+        android:id="@+id/extra_frame_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@+id/title_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+        <TextView
+            android:id="@+id/title"
+            style="@style/TitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/extra_frame_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/Button.BackToMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
